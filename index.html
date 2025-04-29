@@ -1,77 +1,199 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Catering Business</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fb;
+            transition: background-color 0.3s ease;
+        }
 
-<html lang=”en”> 
+        header {
+            background-color: #4e8de0;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
 
-<head> 
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
 
-  <meta charset=”UTF-8” /> 
+        nav {
+            background-color: #3b7dc7;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            transition: background-color 0.3s ease;
+        }
 
-  <meta name=”viewport” content=”width=device-width, initial-scale=1.0”/> 
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
 
-  <title>Your Name – Portfolio</title> 
+        nav a:hover {
+            color: #f4f4f4;
+            transform: scale(1.1);
+        }
 
-  <link rel=”stylesheet” href=”style.css” /> 
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
 
-</head> 
+        .container:hover {
+            transform: scale(1.02);
+        }
 
-<body> 
+        h2 {
+            text-align: center;
+            color: #333;
+            transition: color 0.3s ease;
+        }
 
-  <header> 
+        p {
+            font-size: 1.1em;
+            color: #555;
+            line-height: 1.6;
+        }
 
-    <h1>Your Name</h1> 
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
 
-    <p>Welcome to my portfolio website</p> 
+        .cta-button {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 20px auto;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
 
-  </header> 
+        .cta-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
 
- 
+        footer {
+            text-align: center;
+            background-color: #4e8de0;
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
 
-  <section id=”about”> 
+        .home {
+            background-color: #eef7f9;
+        }
 
-    <h2>About Me</h2> 
+        .menu {
+            background-color: #f8f9fa;
+        }
 
-    <p>I’m a student/developer/designer learning web development…</p> 
+        .about {
+            background-color: #f1f8f3;
+        }
 
-  </section> 
+        .contact {
+            background-color: #f8e4e4;
+        }
 
- 
+    </style>
+</head>
+<body>
 
-  <section id=”projects”> 
+<header>
+    <h1>Delicious Catering</h1>
+</header>
 
-    <h2>Projects</h2> 
+<nav>
+    <a href="#home" class="nav-link">Home</a>
+    <a href="#menu" class="nav-link">Menu</a>
+    <a href="#about" class="nav-link">About Us</a>
+    <a href="#contact" class="nav-link">Contact</a>
+</nav>
 
-    <ul> 
+<!-- Home Section -->
+<section id="home" class="container home">
+    <h2>Welcome to Delicious Catering</h2>
+    <p>We provide mouth-watering, high-quality catering services for all your events. Whether it's a wedding, corporate event, or private party, we make every occasion delicious.</p>
+    <a href="#contact" class="cta-button">Get in Touch</a>
+</section>
 
-      <li>Project 1 – Description</li> 
+<!-- Menu Section -->
+<section id="menu" class="container menu">
+    <h2>Our Menu</h2>
+    <div class="menu-item">
+        <span>Chicken Alfredo</span>
+        <span>$15.99</span>
+    </div>
+    <div class="menu-item">
+        <span>Vegetarian Lasagna</span>
+        <span>$12.99</span>
+    </div>
+    <div class="menu-item">
+        <span>Beef Wellington</span>
+        <span>$29.99</span>
+    </div>
+    <div class="menu-item">
+        <span>Fruit Salad</span>
+        <span>$8.99</span>
+    </div>
+    <div class="menu-item">
+        <span>Chocolate Cake</span>
+        <span>$6.99</span>
+    </div>
+    <a href="#contact" class="cta-button">Order Now</a>
+</section>
 
-      <li>Project 2 – Description</li> 
+<!-- About Us Section -->
+<section id="about" class="container about">
+    <h2>About Us</h2>
+    <p>Delicious Catering has been serving delectable dishes for over a decade. With a team of experienced chefs and catering professionals, we create unforgettable experiences for all types of events.</p>
+    <p>Our commitment is to use only the freshest ingredients and deliver food that makes your guests feel special and satisfied. Whether your event is large or small, we’ve got you covered.</p>
+</section>
 
-    </ul> 
+<!-- Contact Section -->
+<section id="contact" class="container contact">
+    <h2>Contact Us</h2>
+    <p>Ready to place your order or want more information about our services? Reach out to us today!</p>
+    <p>Email: <a href="mailto:info@deliciouscatering.com">info@deliciouscatering.com</a></p>
+    <p>Phone: (555) 123-4567</p>
+    <a href="mailto:info@deliciouscatering.com" class="cta-button">Email Us</a>
+</section>
 
-  </section> 
+<footer>
+    <p>&copy; 2025 Delicious Catering | All rights reserved.</p>
+</footer>
 
- 
-
-  <section id=”contact”> 
-
-    <h2>Contact</h2> 
-
-    <p>Email: yourname@example.com</p> 
-
-  </section> 
-
- 
-
-  <footer> 
-
-    <p>&copy; 2025 Your Name</p> 
-
-  </footer> 
-
-</body> 
-
-</html> 
-
- 
-
- 
+</body>
+</html>
